@@ -23,22 +23,15 @@
 (require 'color-theme-sanityinc-tomorrow)
 (color-theme-sanityinc-tomorrow--define-theme eighties)
 
+;; set font
 (set-default-font  "-outline-Microsoft YaHei UI-normal-normal-normal-sans-16-*-*-*-p-*-iso8859-1")
+
+;; set python-interpreter location
 (setq python-shell-interpreter "D:\\Program Files\\Anaconda3\\python.exe"
       python-shell-interpreter-args "-i D:\\Program Files\\Anaconda3\\Scripts\\ipython3-script.py console --pylab=qt")
 
-	  
-(custom-set-variables
- ;; custom-set-variables was added by Custom.
- ;; If you edit it by hand, you could mess it up, so be careful.
- ;; Your init file should contain only one such instance.
- ;; If there is more than one, they won't work right.
- '(package-selected-packages
-   (quote
-    (elpy color-theme-sanityinc-tomorrow color-theme-sanityinc-solarized))))
-(custom-set-faces
- ;; custom-set-faces was added by Custom.
- ;; If you edit it by hand, you could mess it up, so be careful.
- ;; Your init file should contain only one such instance.
- ;; If there is more than one, they won't work right.
- )
+;;set elpy
+
+(require 'elpy)
+(elpy-enable)
+
